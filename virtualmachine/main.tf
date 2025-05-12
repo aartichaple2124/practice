@@ -1,6 +1,6 @@
 
 resource "azurerm_network_interface" "main" {
-  name                = "{var.component}-nic"
+  name                = "${var.component}-ip"
   location            = data.azurerm_resource_group.roborg.location
   resource_group_name = data.azurerm_resource_group.roborg.name
 
